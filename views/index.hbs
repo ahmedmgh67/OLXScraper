@@ -1,0 +1,26 @@
+<head>
+
+  <title>OLX Scraper</title>
+  <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
+
+</head>
+
+<body dir="rtl">
+  <section>
+    <header>
+      <h2>Olx Scraper</h2>
+      <p>By Ahmed M Gamal</p>
+    </header>
+
+    {{#each data}}
+    <aside>
+      <img src="{{this.photoURL}}" alt="" height="200">
+      <h3>{{this.title}}</h3>
+      <p>{{this.price}}</p>
+      <p><small>{{this.category}}</small></p>
+      <p><small>{{this.location}}</small></p>
+    </aside>
+
+    {{/each}}
+  </section>
+</body>
